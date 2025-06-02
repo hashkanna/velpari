@@ -42,6 +42,23 @@ The repository includes tools for:
 - Audio processing and synchronization
 - Content indexing and search
 
+### Technologies Used
+
+#### AI & ML Tools
+- **OpenAI GPT-4**: Used for advanced text processing, content summarization, and generating contextual descriptions
+- **ElevenLabs**: Powers high-quality Tamil text-to-speech conversion for audio narrations
+- **Whisper**: Handles speech-to-text conversion for video content and audio processing
+
+#### Content Processing
+- **PyPDF2**: PDF text extraction and manipulation
+- **FFmpeg**: Audio/video processing and format conversion
+- **yt-dlp**: YouTube content downloading and processing
+
+#### Development Tools
+- **Python**: Core programming language
+- **FastAPI**: Backend API development
+- **SQLite**: Local content indexing and search
+
 [Setup and usage instructions moved to CONTRIBUTING.md]
 
 ## License
