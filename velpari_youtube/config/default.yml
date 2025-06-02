@@ -1,0 +1,57 @@
+# Output directories
+directories:
+  input: input
+  output: output
+  audio: output/audio
+  images: output/images
+
+# Input settings
+story:
+  chapter_file_pattern: "chapter_{}.txt"
+  output_filename_pattern: "chapter_{}.mp4"
+
+# API configurations
+elevenlabs:
+  model: eleven_multilingual_v2
+  # default_voice: Q9XUbaP7Z0Az8OW9CyRg
+  default_voice: 15CVCzDByBinCIoCblXo
+  quality: high_quality
+
+openai:
+  model: dall-e-3
+  image_size: 1792x1024
+  quality: standard
+  base_prompts:
+    1: >-
+      A highly detailed and vibrant artistic depiction of a Tamil Sangam-era scene. 
+      The illustration captures the cultural richness, natural beauty, and dynamic interactions between characters. 
+      It features key elements such as lush greenery, rugged forest paths, majestic mountain ranges, serene rivers, 
+      coastal landscapes, or desert terrains, depending on the context of the scene. Characters like Sage Kapilar, 
+      depicted with a flowing white beard, traditional topknot, and a wise demeanor, and Neelan, a confident young 
+      warrior with sharp, mature features, are central to the narrative. The atmosphere blends action, reflection, 
+      and harmony, with golden sunlight filtering through the landscape, emphasizing warmth and depth. The composition 
+      should evoke the era's cultural essence, including traditional Tamil motifs, harmonious living, and symbolic 
+      representations of nature's balance. Ensure the scene is crafted in a 16:9 aspect ratio with refined textures 
+      and realistic facial expressions for a cinematic and immersive experience.
+    2: >-
+      A cinematic and atmospheric illustration set in ancient Tamil Nadu, focusing on the journey and challenges. 
+      The scene should capture the raw beauty of the landscape with dramatic lighting and rich details. Characters 
+      should be depicted with strong emotional depth, showing determination and inner conflict. Include elements of 
+      traditional Tamil architecture, clothing, and cultural symbols where relevant. Maintain a 16:9 aspect ratio 
+      with emphasis on creating depth and perspective that draws the viewer into the scene.
+    3: >-
+      An evocative scene from Tamil classical period, emphasizing the philosophical and spiritual aspects of the story. 
+      The artwork should blend realism with subtle mystical elements, featuring detailed depictions of ancient Tamil 
+      temples, meditation spaces, and sacred groves. Characters should be shown with contemplative expressions and 
+      dignified poses. Include symbolic elements from Tamil literature and mythology. Maintain cinematic 16:9 ratio 
+      with careful attention to lighting that creates a sense of divine or transcendent atmosphere.
+
+# Video settings
+video:
+  fps: 24
+  video_codec: libx264
+  video_quality: 18
+  video_preset: veryslow
+  audio_codec: pcm_s16le
+  audio_bitrate: 320k
+  pixel_format: yuv420p 
