@@ -45,9 +45,8 @@ The repository includes tools for:
 ### Technologies Used
 
 #### AI & ML Tools
-- **OpenAI GPT-4**: Used for advanced text processing, content summarization, and generating contextual descriptions
-- **ElevenLabs**: Powers high-quality Tamil text-to-speech conversion for audio narrations
-- **Whisper**: Handles speech-to-text conversion for video content and audio processing
+- **DALL-E 3**: Used for generating high-quality cinematic visuals for each scene, with custom base prompts for consistent artistic style
+- **ElevenLabs**: Powers high-quality Tamil text-to-speech conversion using the eleven_multilingual_v2 model for natural narration
 
 #### Content Processing
 - **PyPDF2**: PDF text extraction and manipulation
